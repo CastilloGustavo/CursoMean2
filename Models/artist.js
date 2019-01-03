@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 
-var Schema = mongoose.schema;
+var Schema = mongoose.Schema;
 
 var ArtistSchema = Schema(
 {
@@ -10,7 +10,7 @@ var ArtistSchema = Schema(
 	description : String,
 	image : String
 
-}); }
+}); 
 
 
 module.export = mongoose.model('Artist',ArtistSchema);

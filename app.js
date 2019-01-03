@@ -7,6 +7,8 @@ var app = express();
 
 //Cargar Rutas
 var user_routes = require("./routes/User");
+var artist_routes = require("./routes/Artist");
+
 
 app.use(bodyParse.urlencoded({	extended : false}));
 app.use(bodyParse.json());
@@ -17,6 +19,8 @@ app.use(bodyParse.json());
 //Rutas Base
 
 app.use("/api",user_routes);
+app.use("/api",artist_routes);
+
 
 
 module.exports = app;

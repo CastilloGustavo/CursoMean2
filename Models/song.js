@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 
-var Schema = mongoose.schema;
+var Schema = mongoose.Schema;
 
 var SongSchema = Schema(
 {
@@ -12,7 +12,7 @@ var SongSchema = Schema(
 	file : String,
 	image : String,
 	album : { type : Schema.ObjectId , ref : 'Album'}
-}); }
+}); 
 
 
 module.export = mongoose.model('Song',SongSchema);
